@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    background-color: #9bbdb721;
+    /* font-family: "Lato", sans-serif; */
+  }
+  
+  .sidebar {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right: 0.8px solid rgb(83, 173, 140);
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #749086;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  .bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top: 0.50px solid rgb(120, 200, 156);
+  }
+  .bottom a{
+    display: inline-block;
+  }
+  .bottom img{
+    height: 20px;
+    width: 20px;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    min-height: 100vh;
+    font-size: large;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .bottom{
+      display: none;
+    }
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {
+      float: left;
+      border-bottom: 0.5px solid rgb(85, 198, 157);
+    }
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  p{
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+/* Style the profile section */
+  #profile {
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  #profile h1{
+    margin: 0;
+  }
+  /**------------------------**/
+  #project li{
+    font-size: 22px;
+    list-style: none;
+    font-weight: bold;
+  }
+  #project li:not(:first-child){
+    margin-top: 20px;
+  }
+  #project li::before{
+    content: "\25C6";
+    margin-right: 0.5em;
+  }
+  #project .container{
+    display: inline-block;
+    margin-left: 50px;
+  }
+  #project .link{
+    display: inline-block;
+    margin-left: 50px;
+    /* font-size: ; */
+  }
+  /**-------------------------**/
+  .highlight{
+    color: #2c2b2b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  .highlight a{
+    color: black;
+  }
